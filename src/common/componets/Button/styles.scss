@@ -1,0 +1,18 @@
+
+  .btn-circle{
+        background-color: #34d186;
+        border-color: #34d186;
+        text-align: center;
+    &__btn-sm {
+        width: 90px;
+        height: 30px;
+        padding: 2px 10px;
+        border-radius: 25px;
+    }
+    &__btn-xl {
+        width: 185px;
+        height: 100%;
+        padding: 7px 16px;
+        border-radius: 35px;
+    }
+  }
