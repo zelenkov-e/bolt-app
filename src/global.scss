@@ -3,6 +3,18 @@ body {
     font-family: 'Rubik', sans-serif;
     font-weight: 400;
     font-size: 14px;
-    background-color: #EDEDED;
+    background-color: #4450d5;
     overflow: auto;
+    height: 100%;
   }
+
+ a{
+  color: #249e64;
+ } 
+ a:hover{
+  color: #249e64;
+  text-decoration: none;
+ }
+ .active-c-pointer{
+   cursor: pointer;
+ }

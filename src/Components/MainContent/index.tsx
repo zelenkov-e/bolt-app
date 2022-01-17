@@ -1,18 +1,18 @@
 import React from "react";
+import DriverForm from "../DriverForm";
+import AdvertizingInfo from "../AdvertisingInfo";
+
+import "./styles.scss";
 
 const MainContent = () => {
     return (
-        <div className="container">
+        <div className="container d-flex align-items-start align-items-md-center main-content">
             <div className="row">
-                <div className="col-sm-6">
-                    <h3>Text</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+                <div className="col-md-6">
+                    <AdvertizingInfo />
                 </div>
-                <div className="col-sm-6">
-                    <h3>Form</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+                <div className="col-md-6">
+                    <DriverForm />
                 </div>
             </div>
         </div>
