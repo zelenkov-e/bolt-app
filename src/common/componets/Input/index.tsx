@@ -27,7 +27,7 @@ const Input: FC<InputProps> = ({ handleChange, handleKeyDown, ...props }) => {
 
 Input.defaultProps = {
     className: 'form-control',
-    type: 'input'
+    type: 'text'
 }
 
 export default Input;
