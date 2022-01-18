@@ -2,7 +2,7 @@ import React from "react";
 import Home from "./pages/Home";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Navbar from "./Components/NavBar"
-import { NavbarItems } from "./common/constants";
+import Layout from "./pages/Layout";
 
 import './global.scss'
 
@@ -12,13 +12,7 @@ const App = () => {
             <Navbar />
             <Switch>
                 <Route exact path="/" component={Home} />
-                {Object.keys(NavbarItems).map((key) => {
-                    return (
-                        <Route exact key={key} path={`/${key}`}>
-                            <div>{NavbarItems[`${key}`]}</div>
-                        </Route>
-                    )
-                })}
+                <Route path="/:page" component={Layout} />
             </Switch>
         </BrowserRouter>
     )
