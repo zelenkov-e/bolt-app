@@ -1,7 +1,10 @@
 
-  .btn-circle{
+    .btn-success {
+        color: #fff;
         background-color: #34d186;
         border-color: #34d186;
+    }
+    .btn-circle{
         text-align: center;
     &__btn-sm {
         width: 90px;

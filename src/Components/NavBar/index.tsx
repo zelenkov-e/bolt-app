@@ -7,8 +7,8 @@ type NavbarProps = RouteComponentProps;
 
 const NavBar = (props: NavbarProps) => {
     return (
-        <nav className="navbar navbar-expand-md navbar-light bg-light sticky-top">
-            <a className="navbar-brand" href="/">Bolt</a>
+        <nav className="navbar navbar-expand-md navbar-light bg-white sticky-top">
+            <a className="navbar-brand" href="/"><b>Bolt</b></a>
             <button
                 className="navbar-toggler navbar-toggler-right"
                 type="button" data-toggle="collapse" data-target="#navb"
@@ -20,7 +20,7 @@ const NavBar = (props: NavbarProps) => {
                 <ul className="navbar-nav">
                     {Object.keys(NavbarItems).map((key) => {
                         return (
-                            <li className="nav-item" key={key} onClick={() => props.history.push(`/${key}`)}>
+                            <li className="nav-item active-c-pointer" key={key} onClick={() => props.history.push(`/${key}`)}>
                                 <a className="nav-link">{NavbarItems[`${key}`]}</a>
                             </li>
                         )

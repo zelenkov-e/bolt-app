@@ -18,3 +18,25 @@ body {
  .active-c-pointer{
    cursor: pointer;
  }
+ .navbar-light .navbar-brand,
+ .navbar-light .navbar-brand:hover {
+  font-size: 35px;
+  color: #34d186;
+}
+
+input[type="email"]:focus,
+input[type="number"]:focus,
+.form select:focus {
+  border-color: #249e64;
+  box-shadow: 0 1px 1px #249e64;
+  outline: 0 none;
+}
+
+input[type="checkbox"]{
+  width: 20px;
+  height: 20px;
+}
+
+input:-webkit-autofill{
+  transition: background-color 5000s ease-in-out 0s;
+}
